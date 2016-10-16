@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My First Express App</title>
+
+        <link rel="stylesheet" type="text/css" href="/bootstrap.min.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+
+    </head>
+
+    <header>
+      <h1><%=nameDeveloper%></h1>
+
+      <div class="box-upper col-lg-12 col-md-12">
+        <div class="col-lg-3 col-md-3">
+          <!-- <img src=<%= myAvatar %> alt='MyAvatar' /> -->
+          <img src="<%= photo %>" alt='MyPhoto' />
+        </div>
+        <div class="box-description col-lg-7 col-md-7"><%= description %>
+          <h2></h2>
+          <ul><% honors.forEach(function(honor) { %>
+            <li><%= honor %></li>
+          <% }) %>
+          </ul>
+        </div>
+      </div>
+
+    </header>
+
+    <body>
+      <section class="container">
+        <div class="box col-lg-5 col-md-5">
+          <h3>Skills</h3>
+          <ul><% skills.forEach(function(skill) { %>
+            <li><%= skill %></li>
+          <% }) %>
+          </ul>
+        </div>
+        <div class="box col-lg-5 col-md-5">
+          <h3>Hobbies</h3>
+          <ul><% hobbies.forEach(function(hobby) { %>
+            <li><%= hobby %></li>
+          <% }) %>
+          </ul>
+        </div>
+      </section>
+
+      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+      <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    </body>
+
+</html>

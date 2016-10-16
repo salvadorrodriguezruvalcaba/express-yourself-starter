@@ -1,0 +1,26 @@
+{
+  "name": "express-yourself-starter",
+  "version": "1.0.0",
+  "description": "A starter app for the ACA full stack express your self project",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salvadorrodriguezruvalcaba/express-yourself-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salvadorrodriguezruvalcaba/express-yourself-starter/issues"
+  },
+  "homepage": "https://github.com/salvadorrodriguezruvalcaba/express-yourself-starter#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "gh-avatar": "^2.0.0",
+    "nodemon": "^1.11.0"
+  }
+}
